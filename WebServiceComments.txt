@@ -1,0 +1,4 @@
+1. Add loging for exceptions and info logs for when there are subscribtion, info logs every time we send employee info
+2. Validate input parameters: date parsing could fail 
+3. Try-catch reading of employee json file
+4. Try catch deserialization of json

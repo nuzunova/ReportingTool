@@ -1,0 +1,44 @@
+﻿@using Reporting.Web.Models;
+@model HomeViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Arrivals</h2>
+        <p>
+            <div id="divArrivals">
+                @if (@Model.Arrivals != null)
+                {
+                    @Html.Partial("_Arrivals", @Model.Arrivals);
+                }
+             </div>
+            <div id="oncomplete"></div>
+        </p>
+    </div>
+</div>
+
+@section Scripts{
+<script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script>
+        function checkForUpdates() {
+            $.ajax({
+                url: "@Url.Action("CheckForUpdates", "Home")",
+                type: 'GET',
+                dataType: 'html',
+                success: function (result) {
+                    if (result != "") {
+                        $('#divArrivals').html(result);
+                    }
+                }
+            });
+        }
+
+		$(function () {
+		    // re-call the function each 5 seconds
+		   window.setInterval("checkForUpdates()", 1000);
+		});
+
+</script>	
+}

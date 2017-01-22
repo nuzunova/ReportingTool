@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{A9F27B12-6483-461E-BD5E-BF227AD2E66C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{906A7439-1E4A-4290-8254-5F69BC1AD867}"
+	ProjectSection(SolutionItems) = preProject
+		Data\employees.json = Data\employees.json
+		Data\employees.txt = Data\employees.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonEmployeeGenerator", "JsonEmployeeGenerator\JsonEmployeeGenerator.csproj", "{4F88BA2B-455B-407A-89EC-2A28F2702E44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reporting", "Reporting", "{2E0A52B7-BA37-4C80-9FB8-3550F87216EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting.Data", "Reporting.Data\Reporting.Data.csproj", "{43A5C899-52ED-494B-A33E-240DE7BC0EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting.Web", "Reporting.Web\Reporting.Web.csproj", "{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting.Web.UnitTests", "Reporting.Web.UnitTests\Reporting.Web.UnitTests.csproj", "{F6779B75-046A-4DD2-9885-185DD4B55E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting.Services", "Reporting.Services\Reporting.Services.csproj", "{1624CBB5-F5C8-4A87-A364-A133A54DE214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporting.Services.UnitTests", "Reporting.Services.UnitTests\Reporting.Services.UnitTests.csproj", "{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{21E83195-601C-453D-9459-19059FA80E79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comments", "Comments", "{33972CE5-2C86-4094-8DEB-47ADB37964D6}"
+	ProjectSection(SolutionItems) = preProject
+		WebServiceComments.txt = WebServiceComments.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonEmployeeGenerator", "JsonEmployeeGeneratorRefactor\JsonEmployeeGenerator.csproj", "{74188F88-BA51-4563-95FB-4EF54D969717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9F27B12-6483-461E-BD5E-BF227AD2E66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F27B12-6483-461E-BD5E-BF227AD2E66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F27B12-6483-461E-BD5E-BF227AD2E66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F27B12-6483-461E-BD5E-BF227AD2E66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F88BA2B-455B-407A-89EC-2A28F2702E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F88BA2B-455B-407A-89EC-2A28F2702E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F88BA2B-455B-407A-89EC-2A28F2702E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F88BA2B-455B-407A-89EC-2A28F2702E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A5C899-52ED-494B-A33E-240DE7BC0EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A5C899-52ED-494B-A33E-240DE7BC0EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A5C899-52ED-494B-A33E-240DE7BC0EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A5C899-52ED-494B-A33E-240DE7BC0EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6779B75-046A-4DD2-9885-185DD4B55E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6779B75-046A-4DD2-9885-185DD4B55E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6779B75-046A-4DD2-9885-185DD4B55E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6779B75-046A-4DD2-9885-185DD4B55E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1624CBB5-F5C8-4A87-A364-A133A54DE214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1624CBB5-F5C8-4A87-A364-A133A54DE214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1624CBB5-F5C8-4A87-A364-A133A54DE214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1624CBB5-F5C8-4A87-A364-A133A54DE214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74188F88-BA51-4563-95FB-4EF54D969717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74188F88-BA51-4563-95FB-4EF54D969717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74188F88-BA51-4563-95FB-4EF54D969717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74188F88-BA51-4563-95FB-4EF54D969717}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A5C899-52ED-494B-A33E-240DE7BC0EBE} = {2E0A52B7-BA37-4C80-9FB8-3550F87216EF}
+		{17D1CFA3-4BD1-4B23-8C6E-A79E09B37BCE} = {2E0A52B7-BA37-4C80-9FB8-3550F87216EF}
+		{F6779B75-046A-4DD2-9885-185DD4B55E14} = {21E83195-601C-453D-9459-19059FA80E79}
+		{1624CBB5-F5C8-4A87-A364-A133A54DE214} = {2E0A52B7-BA37-4C80-9FB8-3550F87216EF}
+		{E712951A-9DA0-4A91-8B7C-E7DD31FFCA8C} = {21E83195-601C-453D-9459-19059FA80E79}
+		{21E83195-601C-453D-9459-19059FA80E79} = {2E0A52B7-BA37-4C80-9FB8-3550F87216EF}
+		{74188F88-BA51-4563-95FB-4EF54D969717} = {33972CE5-2C86-4094-8DEB-47ADB37964D6}
+	EndGlobalSection
+EndGlobal
